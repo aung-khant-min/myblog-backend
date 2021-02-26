@@ -13,7 +13,7 @@ const isEmpty = (arg) => {
 }
 
 const validatePassword = (password) => {
-    if (isEmpty(password)) {
+    if (password === undefined || password === '') {
         return false
     }
     if (password.replace(/\s/g, '').length < 6) {
